@@ -122,14 +122,10 @@ hm.obj_TNBC_HER2 = pheatmap(as.matrix(log2(hm_input+1)),
                   cluster_rows = T,
                   annotation_col = anno_col.input,
                   fontsize = 8,
-                  #cutree_cols = 2,
-                  # annotation_colors =  anno_colors,
                   scale = "row",
-                  #breaks = myBreaks,
                   fontsize_row=2, 
                   fontsize_col = 6,
                   main = "195 Genes differentially expressed between TNBC and HER2 Positive (FDR <0.01)"
-                 # treeheight_col = 0,border_color = 'NA'
 )
 
 # Using hierarchical clustering to assign clustered TNBC Specific epifactors highly expressed compared to HER2+
@@ -210,13 +206,10 @@ hm.obj_all = pheatmap(as.matrix(log2(hm_input+1)),
                   cluster_rows = T,
                   annotation_col = anno_col.input,
                   fontsize = 8,border_color = 'NA',
-                  #cutree_cols = 2,
-                  # annotation_colors =  anno_colors,
                   scale = "row",
                   breaks = breaks,
                   fontsize_row=5, 
                   fontsize_col = 2,
                   main = "84 Genes differentially expressed between TNBC and ER + & HER2 +(FDR <0.01)"
-                  # treeheight_col = 0,border_color = 'NA'
 )
 
